@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enfer+</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Enfer+</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2 class="text-center">Bem-vindo ao Enfer+</h2>
+            <p class="text-center">Uma ferramenta de anotação de quadro de paciente para enfermeiros e técnicos em enfermagem.</p>
+        </section>
+        <section id="about">
+            <h2 class="text-center">Sobre o Enfer+</h2>
+            <p class="text-center">Enfer+ é uma ferramenta projetada para melhorar a documentação, eficiência, comunicação, segurança e qualidade de vida dos pacientes.</p>
+            <p class="text-center">Contribuindo para o objetivo de Desenvolvimento Sustentável (ODS) 3: "Saúde e bem-estar".</p>
+        </section>
+        <section id="patient-data">
+            <h2 class="text-center">Quadro de paciente</h2>
+            <form id="patient-data-form">
+                <div class="form-group">
+                    <label for="date-and-time">Data e hora da anotação:</label>
+                    <input type="datetime-local" id="date-and-time" name="date-and-time" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="blood-pressure">Pressão arterial:</label>
+                    <input type="number" id="blood-pressure" name="blood-pressure" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="respiratory-rate">Taxa respiratória:</label>
+                    <input type="number" id="respiratory-rate" name="respiratory-rate" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="oxygen-saturation">Saturação de oxigênio:</label>
+                    <input type="number" id="oxygen-saturation" name="oxygen-saturation" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="body-temperature">Temperatura corporal:</label>
+                    <input type="number" id="body-temperature" name="body-temperature" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="heart-rate">Frequência cardíaca:</label>
+                    <input type="number" id="heart-rate" name="heart-rate" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="blood-glucose">Glicemia:</label>
+                    <input type="number" id="blood-glucose" name="blood-glucose" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="vital-signs">Sinais vitais:</label>
+                    <textarea id="vital-signs" name="vital-signs" class="form-control"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="gerarAnotacao()">Gerar anotação</button>
+            </form>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
